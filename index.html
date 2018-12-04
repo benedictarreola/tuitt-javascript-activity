@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>JS Game Activity</title>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- animate css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+	<div id="main">
+		<h1><span class="indianred">Rock,</span> <span class="teal">Paper,</span> <span class="royalblue">Scissors</span></h1>
+		<h2>(probs the most original game ever)</h2>
+		<div id="myCanvas">
+			<div class="gameContainer">
+				<div class="subContainer">
+					<h4 id="playerChoice" class="animated infinite">
+						<i id="player" class="far fa-meh"></i>
+					</h4>
+					<h2>You</h2>
+				</div>
+			</div> <!-- end player side -->
+
+			<div class="gameContainer">
+				<div class="subContainer">
+					<h3 id="gameResult">Choose</h3>
+					<h3><span id="playerScore">0</span> - <span id="enemyScore">0</span></h3>
+					<button id="btnRock">Rock</button>
+					<button id="btnPaper">Paper</button>
+					<button id="btnScissors">Scissors</button>
+				</div>
+			</div> <!-- end choices -->
+
+			<div class="gameContainer">
+				<div class="subContainer">
+					<h4 id="enemyChoice" class="animated infinite">
+						<i id="enemy" class="far fa-grimace"></i>
+					</h4>
+					<h2>Challenger</h2>
+				</div>
+			</div> <!-- end enemy side -->
+		</div>		
+	</div>
+
+
+	<!-- external js -->
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

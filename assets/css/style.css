@@ -1,0 +1,93 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: #EEE;
+}
+
+#main {
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+	margin-top: 20px;
+}
+
+.indianred {
+	color: indianred;
+}
+
+.teal {
+	color: teal;
+}
+
+.royalblue {
+	color: royalblue;
+}
+
+h2 {
+	color: rgba(0, 0, 0, 0.25);
+	margin-bottom: 20px;
+}
+
+h3 {
+	color: #333;
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 200px;
+}
+
+i {
+	color: #222;
+}
+
+#myCanvas {
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.gameContainer {
+	width: 300px;
+	height: 500px;
+	float: left;
+	position: relative;
+}
+
+.subContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+button[id*="btn"] {
+	width: 200px;
+	height: 80px;
+	margin: 20px;
+	border-style: none;
+	font-size: 24px;
+	border-radius: 5px;
+	color: #EEE;
+}
+
+#btnRock {
+	background-color: indianred;
+}
+
+#btnPaper {
+	background-color: teal;
+}
+
+#btnScissors {
+	background-color: royalblue;
+}
+
