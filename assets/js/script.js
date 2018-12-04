@@ -21,10 +21,21 @@ function enemyRemoveIcons(){
 	$('#enemyChoice').removeClass("tada");
 }
 
+function buttonRemoveAnim() {
+	$('#btnRock').removeClass("rubberBand");
+	$('#btnPaper').removeClass("rubberBand");
+	$('#btnScissors').removeClass("rubberBand");
+}
+
 $("#btnRock").click(function(){
 	
 	playerRemoveIcons();
 	enemyRemoveIcons();
+	buttonRemoveAnim();
+
+	$('#btnRock').delay(100).queue( function(){
+		$(this).addClass("rubberBand").dequeue();
+	});
 
 	$('#player').addClass("fa-hand-rock indianred");
 	var playerChoice = "rock";
@@ -37,6 +48,11 @@ $("#btnPaper").click(function(){
 	
 	playerRemoveIcons();
 	enemyRemoveIcons();
+	buttonRemoveAnim();
+
+	$('#btnPaper').delay(100).queue( function(){
+		$(this).addClass("rubberBand").dequeue();
+	});
 
 	$('#player').addClass("fa-hand-paper teal");
 	var playerChoice = "paper";
@@ -49,6 +65,11 @@ $("#btnScissors").click(function(){
 	
 	playerRemoveIcons();
 	enemyRemoveIcons();
+	buttonRemoveAnim();
+
+	$('#btnScissors').delay(100).queue( function(){
+		$(this).addClass("rubberBand").dequeue();
+	});
 
 	$('#player').addClass("fa-hand-scissors royalblue");
 	var playerChoice = "scissors";
